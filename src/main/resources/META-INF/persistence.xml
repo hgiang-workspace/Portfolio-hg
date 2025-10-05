@@ -7,7 +7,7 @@
         <class>model.Homework</class>
         <properties>
             <!-- URL kết nối đến cơ sở dữ liệu -->
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://pg-d3cittggjchc7397jk2g-a.singapore-postgres.render.com/portfolio_db_ycxm?sslmode=require"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://dpg-d3cittggjchc7397jk2g-a.singapore-postgres.render.com/portfolio_db_ycxm?sslmode=require"/>
             <!-- Tên người dùng -->
             <property name="javax.persistence.jdbc.user" value="portfolio_db_ycxm_user"/>
             <!-- Mật khẩu -->
