@@ -8,7 +8,7 @@ LABEL maintainer="ngiang2k5@gmail.com"
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Copy file WAR vào Tomcat webapps
-COPY target/porfolio.war /usr/local/tomcat/webapps/ROOT.war
+COPY porfolio.war /usr/local/tomcat/webapps/ROOT.war
 
 # Expose port Tomcat
 EXPOSE 8080
