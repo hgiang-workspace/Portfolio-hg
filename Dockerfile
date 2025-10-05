@@ -1,14 +1,11 @@
-# Base image Tomcat
 FROM tomcat:9.0-jdk17
 
-# Metadata
-LABEL maintainer="ngiang2k5@gmail.com"
-
-# Xoá webapps mặc định của Tomcat
 RUN rm -rf /usr/local/tomcat/webapps/*
 
-# Copy file WAR vào Tomcat webapps
 COPY porfolio.war /usr/local/tomcat/webapps/ROOT.war
 
-# Expose port Tomcat
+# Expose cổng 8080
 EXPOSE 8080
+
+# Khởi động Tomcat
+CMD ["catalina.sh", "run"]
